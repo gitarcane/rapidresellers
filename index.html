@@ -50,7 +50,7 @@
                 
             }
             .title {
-                font-family: AppleBlack, "Helvetica", Sans-Serif;
+                font-family: AppleBold, "Helvetica", Sans-Serif;
                 font-weight: 1000;
                 font-size: 42px;
             }
@@ -60,11 +60,25 @@
   flex-direction: row;
   margin: 20px;
   width: 90%;
-  max-width: 920px;
+  flex-wrap: wrap;
+  align-items: center;
+    justify-content: center;
 }
 
 .card {
 margin:20px;
+}
+
+.line {
+    opacity: 1; 
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;     
+    width: 100%;
+    height: 1px;
+    background-image: radial-gradient(circle, #fff 23%, transparent);
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -79,14 +93,18 @@ margin:20px;
 
           <div >
             <center>
-                <h1 class="title" style="margin-top: 80px; color:#fff;">Rapid Resellers</h1>
-            <div><img src="arrow.svg"><a style="width: 256px; text-align:center; margin-left: 200px; margin-right: 200px; font-family: AppleReg, 'Helvetica', Sans-Serif; font-size: 30px; color:#9fa3a6"> Learn More</a><img src="arrow2.svg"></div>
+                <h1 class="title" style="font-size:56px; margin-top: 80px; color:#fff; width: 90%; max-width: 850px;">You’re Seconds Away From Our <span style="color:#00ff00; font-family: AppleBold, 'Helvetica', Sans-Serif;  background: linear-gradient(135deg, #00ff00 60%, #30A05C 100%);  background-clip: text;
+                    color: transparent;">$426/day Systems</span> That Practically Guarantee Success</h1>
+
+            <div><img src="arrow.svg"><button style="background: linear-gradient(135deg, #00ff00 0%, #30A05C 100%); width: 70%; max-width: 400px; font-size: 30px; height: 80px; margin-right: 2vw; margin-left: 2vw;">JOIN NOW FOR FREE</button><img src="arrow2.svg"></div>
+
+                <br><br>
+            <div class="line"></div>
             <br><br>
-                
-            <a style="color:#fff; font-size: 36px;" class="title">Top Products</a><br><br>
+            <a style="color:#fff; font-size: 36px;" class="title">Popular Products</a><br><br>
             
             <div class="flex-container">
-            <div class="card" style="width: 300px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
+            <div class="card" style="width: 270px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
             <img src="airpods.png" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
             <a style="color:#fff; font-size: 30px; font-family: RedFive, sans-serif;">Airpods Pro 2</a>
             <br><br>
@@ -96,7 +114,7 @@ margin:20px;
             <button>Learn Now</button>
         </div>
 
-            <div class="card"  style="width: 300px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
+            <div class="card"  style="width: 270px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
             <img src="dyson.png" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
             <a style="color:#fff; font-size: 30px; font-family: RedFive, sans-serif;">Dyson Hairdryer</a>
             <br><br>
@@ -106,7 +124,7 @@ margin:20px;
             <button>Learn Now</button>
         </div>
 
-        <div class="card"  style="width: 300px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
+        <div class="card"  style="width: 270px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
             <img src="stanley.webp" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
             <a style="color:#fff; font-size: 30px; font-family: RedFive, sans-serif;">Stanley Tumbler</a>
             <br><br>
@@ -115,8 +133,70 @@ margin:20px;
             <br><br>
             <button>Learn Now</button>
         </div>
+        
     </div>
-    </center>
+    <div><img src="arrow.svg"><button style="background: linear-gradient(135deg, #00ff00 0%, #30A05C 100%); width: 70%; max-width: 400px; font-size: 30px; height: 80px; margin-right: 2vw; margin-left: 2vw;">100+ PRODUCTS</button><img src="arrow2.svg"></div>
+    <div class="line"></div>
+    <a style="color:#fff; font-size: 36px;" class="title">Our Students' Success</a><br><br>
+    <div class="flex-container">
+
+        <video autoplay loop muted src="assets/images/video.mp4" style="width:220px; margin:10px;  border-radius: 25px;"></video>
+        <video autoplay loop muted src="assets/images/video2.mp4" style="width:220px; margin:10px;  border-radius: 25px;"></video>
+        <video autoplay loop muted src="assets/images/video3.mp4" style="width:220px; margin:10px;  border-radius: 25px;"></video>
+    </div>
+    <div><img src="arrow.svg"><button style="background: linear-gradient(135deg, #00ff00 0%, #30A05C 100%); width: 70%; max-width: 400px; font-size: 30px; height: 80px; margin-right: 2vw; margin-left: 2vw;">5500+ MEMBERS</button><img src="arrow2.svg"></div>
+    <div class="line"></div>
+
+    <h1 class="title" style="font-size:36px; margin-top: 80px; color:#fff; width: 90%; max-width: 850px;">When you join <span style="color:#00ff00; font-family: AppleBold, 'Helvetica', Sans-Serif;  background: linear-gradient(135deg, #00ff00 60%, #30A05C 100%);  background-clip: text;
+        color: transparent;">Rapid Resellers</span> Today, You get Full & Immediate Access To:</h1>
+
+
+<div  class="flex-container" style="width:80%; max-width: 900px; margin:10px;  border-radius: 25px; background-color: #2d2f31; height: 300px;">
+    <div style="width: 500px; text-align: left;">
+        <a style="color:#fff; font-size: 30px; font-family: AppleBlack, sans-serif;">Step-By-Step Training</a>
+        <br><br>
+        <a  style="color:#fff; font-size: 20px; font-family: AppleReg, sans-serif;">• Do this, Do that, Money arrives <b>easy-to-follow guidances</b></a><br>
+        <a  style="color:#fff; font-size: 20px; font-family: AppleReg, sans-serif;">• Scale from <b>$0 - $10k+/month</b> ASAP</a><br>
+        <a  style="color:#fff; font-size: 20px; font-family: AppleReg, sans-serif;">• No BS, <b>Start Today</b></a>
+    </div>
+<div style="width: 300px; text-align: left;">
+    <div style="width: 300px; text-align: left;">
+        <img src="assets/images/laptop.png" style="width:300px;"></img>
+        </div>
+</div>
+    </div>
+
+<div class="flex-container">
+
+    <div  class="flex-container" style="width:80%; max-width: 900px; margin:10px;  border-radius: 25px; background-color: #2d2f31; height: 300px;">
+    <div style="width: 500px; text-align: left;">
+        <a style="color:#fff; font-size: 30px; font-family: AppleBlack, sans-serif;">Elite Private Network & Community</a>
+        <br><br>
+        <a  style="color:#fff; font-size: 20px; font-family: AppleReg, sans-serif;">• <b>5500+</b> members</a><br>
+        <a  style="color:#fff; font-size: 20px; font-family: AppleReg, sans-serif;">• <b>Success is easier</b> when you're on a winning team</a><br>
+        <a  style="color:#fff; font-size: 20px; font-family: AppleReg, sans-serif;">• 24/7 <b>active community</b></a>
+
+    </div>
+    <div style="width: 300px; text-align: left;">
+    <img src="assets/images/network.png" style="width: 300px;"></img>
+    </div>
+    </div>
+
+
+
+</div>
+
+<div><img src="arrow.svg"><button style="background: linear-gradient(135deg, #00ff00 0%, #30A05C 100%); width: 70%; max-width: 400px; font-size: 30px; height: 80px; margin-right: 2vw; margin-left: 2vw;">JOIN NOW FOR FREE</button><img src="arrow2.svg"></div>
+    
+
+
+<div class="line"></div>
+<div>
+    <h1 class="title" style="font-size:36px; margin-top: 80px; color:#fff; width: 90%; max-width: 850px;">FAQ</h1>
+</div>
+
+
+</center>
         </div>
 
 
