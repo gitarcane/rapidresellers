@@ -55,6 +55,12 @@
                 font-size: 42px;
             }
 
+            .smoothload {
+                opacity: 0%;
+                animation: 0.7s ease-out 0.5s 1 smoothload forwards;
+            }
+
+
             .flex-container {
   display: flex;
   flex-direction: row;
@@ -79,8 +85,33 @@ margin:20px;
     overflow: hidden;
     margin-top: 50px;
     margin-bottom: 50px;
+    opacity: 0%;
+    animation: 0.7s ease-out 0.5s 1 width forwards;
 }
 
+
+
+
+@keyframes smoothload {
+             0% {
+                transform: translateY(50%);
+                opacity: 0%;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 100%;
+            }
+}
+@keyframes width {
+             0% {
+                opacity: 0%;
+                width: 0%;
+            }
+            100% {
+                opacity: 100%;
+                width: 100%;
+            }
+}
 
 
 
@@ -93,19 +124,21 @@ margin:20px;
 
           <div >
             <center>
-                <h1 class="title" style="font-size:56px; margin-top: 80px; color:#fff; width: 90%; max-width: 850px;">You’re Seconds Away From Our <span style="color:#00ff00; font-family: AppleBold, 'Helvetica', Sans-Serif;  background: linear-gradient(135deg, #00ff00 60%, #30A05C 100%);  background-clip: text;
+                <h1 class="title smoothload" style="font-size:56px; margin-top: 120px; color:#fff; width: 90%; max-width: 850px;">You’re Seconds Away From Our <span style="color:#00ff00; font-family: AppleBold, 'Helvetica', Sans-Serif;  background: linear-gradient(135deg, #00ff00 60%, #30A05C 100%);  background-clip: text;
                     color: transparent;">$426/day Systems</span> That Practically Guarantee Success</h1>
 
-            <div><img src="arrow.svg"><button style="background: linear-gradient(135deg, #00ff00 0%, #30A05C 100%); width: 70%; max-width: 400px; font-size: 30px; height: 80px; margin-right: 2vw; margin-left: 2vw;">JOIN NOW FOR FREE</button><img src="arrow2.svg"></div>
+            <div class="smoothload"><img src="arrow.svg"><button style="background: linear-gradient(135deg, #00ff00 0%, #30A05C 100%); width: 70%; max-width: 400px; font-size: 30px; height: 80px; margin-right: 2vw; margin-left: 2vw;">JOIN NOW FOR FREE</button><img src="arrow2.svg"></div>
+            <br><br>
 
                 <br><br>
+            
             <div class="line"></div>
             <br><br>
-            <a style="color:#fff; font-size: 36px;" class="title">Popular Products</a><br><br>
+            <a style="color:#fff; font-size: 36px;" class="title smoothload">Popular Products</a><br><br>
             
             <div class="flex-container">
             <div class="card" style="width: 270px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
-            <img src="airpods.png" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
+            <img loading="lazy" src="airpods.png" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
             <a style="color:#fff; font-size: 30px; font-family: RedFive, sans-serif;">Airpods Pro 2</a>
             <br><br>
             <a style="color:#fff; font-family: AppleReg, 'Helvetica', Sans-Serif;">Buy at <span style="color:#ff0000;">$60</span></a><br>
@@ -115,20 +148,20 @@ margin:20px;
         </div>
 
             <div class="card"  style="width: 270px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
-            <img src="dyson.png" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
+            <img loading="lazy" src="dyson.png" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
             <a style="color:#fff; font-size: 30px; font-family: RedFive, sans-serif;">Dyson Hairdryer</a>
             <br><br>
-            <a style="color:#fff">Buy at <span style="color:#ff0000;">$30</span></a><br>
+            <a style="color:#fff; font-family: AppleReg, 'Helvetica', Sans-Serif;">Buy at <span style="color:#ff0000;">$30</span></a><br>
             <a style="color:#fff; font-size: 24px; font-family: AppleMed, 'Helvetica', Sans-Serif;">Resell at <span style="color:#00ff00; font-family: AppleBold, 'Helvetica', Sans-Serif;"">$429.99</span></a>
             <br><br>
             <button>Learn Now</button>
         </div>
 
         <div class="card"  style="width: 270px; height: 512px; background-color:#2d2f31; border-radius: 25px; ">
-            <img src="stanley.webp" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
+            <img loading="lazy" src="stanley.webp" style="width:220px; margin-top:30px; margin-bottom:10px;"></img>
             <a style="color:#fff; font-size: 30px; font-family: RedFive, sans-serif;">Stanley Tumbler</a>
             <br><br>
-            <a style="color:#fff">Buy at <span style="color:#ff0000;">$5</span></a><br>
+            <a style="color:#fff; font-family: AppleReg, 'Helvetica', Sans-Serif;">Buy at <span style="color:#ff0000;">$5</span></a><br>
             <a style="color:#fff; font-size: 24px; font-family: AppleMed, 'Helvetica', Sans-Serif;">Resell at <span style="color:#00ff00; font-family: AppleBold, 'Helvetica', Sans-Serif;"">$44.99</span></a>
             <br><br>
             <button>Learn Now</button>
@@ -200,7 +233,7 @@ margin:20px;
         </div>
 
 
-
+    
         
         <script src="" async defer></script>
     </body>
